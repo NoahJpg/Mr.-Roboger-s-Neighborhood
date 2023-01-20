@@ -53,6 +53,25 @@ Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 Test: "It should include numbers with multiple digits"
 Code: addNumsBelowInput(11)
 Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+FAIL
+
+Describe: myNeighbor()
+
+Test: "It should turn the input numbers into strings"
+Code: myNeighbor(11)
+Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+
+Describe: myNeighbor()
+
+Test: "It should loop through numbers and output all numbers before into an array"
+Code: myNeighbor(11)
+Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+
+
+
+
 
 
 

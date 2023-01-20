@@ -1,36 +1,50 @@
 
 
 // Business Logic
-function splitIntoArray(number) {
-  let userInput = parseInt(document.querySelector("input#userInput").value);
-  let numberArray = [];
-  numberArray.push(number); 
-  return numberArray;
-}
+// function splitIntoArray(number) {
+//   let userInput = parseInt(document.querySelector("input#userInput").value);
+//   let numberArray = [];
+//   numberArray.push(number); 
+//   return numberArray;
+// }
 
-function addNumsBelowInput(number) {
-  let numArray = splitIntoArray()
-  for (let i = 0; i <= number; i++)
-    numArray += i;
-  numArray = numArray.split("1");
+// function addNumsBelowInput(number) {
+//   let numArray = splitIntoArray()
+//   for (let i = 0; i <= number; i++)
+//     numArray += i;
+//   numArray = numArray.split("1");
 
-  return numArray;
-}
-
-
+//   return numArray;
+// }
 
 function myNeighbor() {
   let number = document.getElementById("userNum").value;
-  let newArray = [];
+  let result = [];
   for (let i = 0; i <= number; i++) {
     if (i.toString().includes("1")) {
-      newArray.push("Beep!")
+      result.push("Beep!")
     }
-    else {
-      output.push(i);
+    else if (i.toString().includes("3")) {
+      result.push("Boop!");
     }
   }
 }
+
+let output = "";
+for (let i = 0; i <= result.length0; i++) {
+    output += result[i];
+}
+
+
+// UI Logic
+
+document.getElementById("result").innerHTML = resultString;
+window.addEventListener("load", function() {
+  const form = document.getElementById("numberInput");
+  form.addEventListener("submit", myNeighbor);
+})
+
+
 // const array = addNumsBelowInput(number);
 
 // function replaceOnesWithBeep(number) {
@@ -57,8 +71,3 @@ function myNeighbor() {
 
 
 
-// UI Logic
-window.addEventListener("load", function() {
-  const form = document.getElementById("numberInput");
-  form.addEventListener("submit", myNeighbor);
-})
