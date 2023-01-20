@@ -1,16 +1,12 @@
 
 
-//Utility Logic
-
+// Business Logic
 function splitIntoArray(number) {
   return Array.from(String(number), Number)
 }
 
-
-// Business Logic
 function addNumsBelowInput(number) {
   let numArray = splitIntoArray(number)
-  // let newNum = [];
   for (let i = 0; i <= number; i++)
     numArray += i;
   numArray = numArray.split("")
@@ -19,30 +15,40 @@ function addNumsBelowInput(number) {
 }
 
 function replaceOnesWithBeep(number) {
-  for (let i = 1; i <= number; i++) {
-    if(i % 1 === 0);
+  let oneNumber = addNumsBelowInput(number);
+  for (let i = 0; i <= number; i++) {
+    if(i === 1);
     return "Beep!"
   }
 }
 
 function replaceTwosWithBoop(number) {
-  for (let i = 1; i <= number; i++) {
-    if(i % 2 === 0);
+  for (let i = 0; i <= number; i++) {
+    if(i === 2);
     return "Boop!"
   }
 }
 
 function replaceThreesWithNeighbor(number) {
-  for (let i = 1; i <= number; i++) {
-    if(i % 3 === 0);
+  for (let i = 0; i <= number; i++) {
+    if(i === 3);
     return "Won't you be my Neighbor?"
   }
 }
+
+function myNeighbor(number) {
+  addNumsBelowInput(number);
+  replaceThreesWithNeighbor(number)
+  replaceTwosWithBoop(number)
+  replaceOnesWithBeep(num)
+  return number;
+}
+
 
 
 
 // UI Logic
 window.addEventListener("load", function() {
   const form = document.getElementById("numberInput");
-  form.addEventListener("submit", mrRoboger);
-});
+  form.addEventListener("submit", myNeighbor);
+})

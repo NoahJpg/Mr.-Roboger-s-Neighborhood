@@ -27,7 +27,13 @@ Expected Output: "Boop!"
 Describe: replaceThreesWithNeighbor()
 
 Test: "it should numbers of any length containing 3 with 'Won't you be my neighbor?' "
-Code: replaceThreesWithNeighbor(3)
+Code: replaceThreesWithNeighbor(453)
+Expected Output: "Won't you be my neighbor?"
+
+Describe: myNeighbor()
+
+Test: "it should orgainze heiarchy of 1 2 and 3 into own function "
+Code: myNeighbor(123)
 Expected Output: "Won't you be my neighbor?"
 
 
