@@ -62,11 +62,11 @@ Code: myNeighbor(11)
 Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 
-Describe: myNeighbor()
+Describe:  console.Log(result + " -result");
 
-Test: "It should loop through numbers and output all numbers before into an array"
-Code: myNeighbor(11)
-Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Test: "It should check that the result is being pushed to the output array"
+Code: 
+Expected Output: 
 
 
 

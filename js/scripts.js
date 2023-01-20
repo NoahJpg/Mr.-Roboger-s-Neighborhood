@@ -20,11 +20,12 @@
 function myNeighbor() {
   let number = document.getElementById("userNum").value;
   let result = [];
+  console.Log(result + " -result");
   for (let i = 0; i <= number; i++) {
     if (i.toString().includes("1")) {
       result.push("Beep!")
     }
-    else if (i.toString().includes("3")) {
+    else if (i.toString().includes("2")) {
       result.push("Boop!");
     }
   }
@@ -38,11 +39,11 @@ for (let i = 0; i <= result.length0; i++) {
 
 // UI Logic
 
-document.getElementById("result").innerHTML = resultString;
-window.addEventListener("load", function() {
-  const form = document.getElementById("numberInput");
-  form.addEventListener("submit", myNeighbor);
-})
+// document.getElementById("result").innerHTML = resultString;
+// window.addEventListener("load", function() {
+//   const form = document.getElementById("numberInput");
+//   form.addEventListener("submit", myNeighbor);
+// })
 
 
 // const array = addNumsBelowInput(number);
