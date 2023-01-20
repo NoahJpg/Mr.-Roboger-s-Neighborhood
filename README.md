@@ -65,9 +65,14 @@ Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 Describe:  console.Log(result + " -result");
 
 Test: "It should check that the result is being pushed to the output array"
-Code: 
-Expected Output: 
+Code: 3
+Expected Output: [1, boop, 3]
 
+Describe:  console.Log(result + " -result");
+
+Test: "It should check if outputted array will contain a 2
+Code: 4
+Expected Output: true - result
 
 
 

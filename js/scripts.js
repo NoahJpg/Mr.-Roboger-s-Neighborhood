@@ -27,13 +27,14 @@ function myNeighbor() {
     }
     else if (i.toString().includes("2")) {
       result.push("Boop!");
+      console.Log(result + " -result");
     }
   }
 }
 
-let output = "";
-for (let i = 0; i <= result.length0; i++) {
-    output += result[i];
+let resultString = "";
+for (let i = 0; i <= result.length; i++) {
+    resultString += result[i];
 }
 
 
