@@ -9,11 +9,12 @@ function splitIntoArray(number) {
 }
 
 function addNumsBelowInput(number) {
-  let numArray = splitIntoArray()
+  let numArray = splitIntoArray(number)
+  console.log(numArray + " This is num array")
   for (let i = 0; i <= number; i++)
     numArray += i;
-  numArray = numArray.split(",");
-  // numArray.shift();
+  numArray = numArray.split(" ");
+  numArray.shift();
   return numArray;
 }
 

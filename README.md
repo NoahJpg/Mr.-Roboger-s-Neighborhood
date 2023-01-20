@@ -43,9 +43,14 @@ Test: "It should put numbers into an array"
 Code: returnArray(543);
 Expected Output: [543]
 
+
 Describe: addNumsBelowInput()
 
-Test: "It should put numbers below input number into an array"
+Test: "It should put numbers below the input number into an array"
+Code: addNumsBelowInput(9)
+Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Test: "It should include numbers with multiple digits"
 Code: addNumsBelowInput(11)
 Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
