@@ -25,6 +25,20 @@ function replaceOnesWithBeep(number) {
   }
 }
 
+function replaceTwosWithBoop(number) {
+  for (let i = 1; i <= number; i++) {
+    if(i % 2 === 0);
+    return "Boop!"
+  }
+}
+
+function replaceThreesWithNeighbor(number) {
+  for (let i = 1; i <= number; i++) {
+    if(i % 3 === 0);
+    return "Won't you be my Neighbor?"
+  }
+}
+
 
 
 // UI Logic
