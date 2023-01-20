@@ -1,13 +1,13 @@
 
 
-
-
-// Business Logic
+//Utility Logic
 
 function splitIntoArray(number) {
   return Array.from(String(number), Number)
 }
 
+
+// Business Logic
 function addNumsBelowInput(number) {
   let numArray = splitIntoArray(number)
   // let newNum = [];
@@ -16,6 +16,13 @@ function addNumsBelowInput(number) {
   numArray = numArray.split("")
   numArray.shift();
   return numArray;
+}
+
+function replaceOnesWithBeep(number) {
+  for (let i = 1; i <= number; i++) {
+    if(i % 1 === 0);
+    return "Beep!"
+  }
 }
 
 
