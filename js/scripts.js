@@ -10,7 +10,11 @@ function splitIntoArray(number) {
 
 function addNumsBelowInput(number) {
   let numArray = splitIntoArray(number)
-  forEach(number)
+  // let newNum = [];
+  for (let i = 0; i <= number; i++)
+    numArray += i;
+  numArray = numArray.split("")
+  numArray.shift();
   return numArray;
 }
 
