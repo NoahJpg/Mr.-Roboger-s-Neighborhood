@@ -32,10 +32,16 @@ Expected Output: "Won't you be my neighbor?"
 
 Describe: myNeighbor()
 
-Test: "it should orgainze heiarchy of 1 2 and 3 into own function "
+Test: "it should reorganize separate replace functions into one to apply branching"
 Code: myNeighbor(123)
 Expected Output: "Won't you be my neighbor?"
 
+
+Describe: splitIntoArray()
+
+Test: "It should put numbers into an array"
+Code: returnArray(543);
+Expected Output: [543]
 
 
 
