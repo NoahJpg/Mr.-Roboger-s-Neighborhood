@@ -9,23 +9,29 @@ function splitIntoArray(number) {
 }
 
 function addNumsBelowInput(number) {
-  let numArray = splitIntoArray(number)
-  console.log(numArray + " This is num array")
+  let numArray = splitIntoArray()
   for (let i = 0; i <= number; i++)
     numArray += i;
-  numArray = numArray.split(" ");
-  numArray.shift();
+  numArray = numArray.split("1");
+
   return numArray;
 }
 
-function myNeighbor(number) {
-  const array = addNumsBelowInput(number);
-  console.log(array + " - this is the array")
-  let newArray = [];
-  for (let i = 0; i <= number; i++)
-  return array;
-}
 
+
+function myNeighbor() {
+  let number = document.getElementById("userNum").value;
+  let newArray = [];
+  for (let i = 0; i <= number; i++) {
+    if (i.toString().includes("1")) {
+      newArray.push("Beep!")
+    }
+    else {
+      output.push(i);
+    }
+  }
+}
+// const array = addNumsBelowInput(number);
 
 // function replaceOnesWithBeep(number) {
 //   let oneNumber = addNumsBelowInput(number);
