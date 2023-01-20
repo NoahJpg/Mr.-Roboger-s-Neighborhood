@@ -9,17 +9,17 @@ function splitIntoArray(number) {
 }
 
 function addNumsBelowInput(number) {
-  let numArray = splitIntoArray(number)
-  for (let i = 1; i <= number; i++)
+  let numArray = splitIntoArray()
+  for (let i = 0; i <= number; i++)
     numArray += i;
-  numArray = numArray.split("")
-  numArray.shift();
+  numArray = numArray.split(",");
+  // numArray.shift();
   return numArray;
 }
 
 function myNeighbor(number) {
   const array = addNumsBelowInput(number);
-  // console.log(array + " - this is the array")
+  console.log(array + " - this is the array")
   let newArray = [];
   for (let i = 0; i <= number; i++)
   return array;
