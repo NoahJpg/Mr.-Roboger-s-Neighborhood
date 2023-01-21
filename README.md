@@ -68,11 +68,20 @@ Test: "It should check that the result is being pushed to the output array"
 Code: 3
 Expected Output: [1, boop, 3]
 
-Describe:  console.Log(result + " -result");
-
-Test: "It should check if outputted array will contain a 2
+Test: "It should check if outputted array will contain a 3
+Test: "It should check if outputted array will contain a 3
 Code: 4
 Expected Output: true - result
+Code: 2
+Expected Output: false - result
+
+Describe:  console.Log(result + " -result");
+
+Test: "It should check if outputted array will contain a 3"
+Code: 3
+Expected Output: true - result
+
+
 
 
 

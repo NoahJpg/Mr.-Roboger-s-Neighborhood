@@ -20,7 +20,6 @@
 function myNeighbor() {
   let number = document.getElementById("userNum").value;
   let result = [];
-  console.Log(result + " -result");
   for (let i = 0; i <= number; i++) {
     if (i.toString().includes("1")) {
       result.push("Beep!")
