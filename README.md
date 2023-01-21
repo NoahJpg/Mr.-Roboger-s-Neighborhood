@@ -81,7 +81,11 @@ Test: "It should check if outputted array will contain a 3"
 Code: 3
 Expected Output: true - result
 
+Describe: let number = i.toString();
 
+Test: "It should convert later number functions to string to avoid repitition"
+Code: 
+Expected Output: 
 
 
 

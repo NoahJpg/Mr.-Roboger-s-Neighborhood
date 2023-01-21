@@ -21,19 +21,24 @@ function myNeighbor() {
   let number = document.getElementById("userNum").value;
   let result = [];
   for (let i = 0; i <= number; i++) {
-    if (i.toString().includes("1")) {
+    let number = i.toString();
+    if (number.includes("1")) {
       result.push("Beep!")
     }
     else if (i.toString().includes("2")) {
       result.push("Boop!");
       console.Log(result + " -result");
     }
+    else if (number.includes("3")) {
+      result.push("Won't you be my neighbor?");
+    }
   }
 }
-
+function outputResults () {
 let resultString = "";
 for (let i = 0; i <= result.length; i++) {
     resultString += result[i];
+  }
 }
 
 
