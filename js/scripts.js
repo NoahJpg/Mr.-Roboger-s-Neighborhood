@@ -25,30 +25,29 @@ function myNeighbor() {
     if (number.includes("1")) {
       result.push("Beep!")
     }
-    else if (i.toString().includes("2")) {
+    else if (number.includes("2")) {
       result.push("Boop!");
-      console.Log(result + " -result");
     }
     else if (number.includes("3")) {
       result.push("Won't you be my neighbor?");
     }
+    else {
+      result.push(i);
+    }
   }
 }
 function outputResults () {
-let resultString = "";
-for (let i = 0; i <= result.length; i++) {
-    resultString += result[i];
+  let resultString = "";
+  for (let i = 0; i <= result.length; i++) {
+      resultString += result[i];
+      document.getElementById("output").innerHTML = resultString;
+    }
   }
-}
-
 
 // UI Logic
-
-// document.getElementById("result").innerHTML = resultString;
-// window.addEventListener("load", function() {
-//   const form = document.getElementById("numberInput");
-//   form.addEventListener("submit", myNeighbor);
-// })
+window.addEventListener("load", function() {
+  form.addEventListener("submit", myNeighbor, outputResults);
+})
 
 
 // const array = addNumsBelowInput(number);

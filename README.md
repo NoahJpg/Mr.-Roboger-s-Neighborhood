@@ -87,11 +87,17 @@ Test: "It should convert later number functions to string to avoid repitition"
 Code: 
 Expected Output: 
 
+Describe: outputResults()
 
+Test: "It should store a variable that holds a blank string"
+Code: let outputString = ""
+Expected Output: n/a
 
+Describe: outputResults()
 
-
-
+Test: "It loop through the results and add each result to a string for the user to see"
+Code: outputResults(5)
+Expected Output: "0 Beep!Boop!Won't you be my neighbor? 4 5"
 
 
 
