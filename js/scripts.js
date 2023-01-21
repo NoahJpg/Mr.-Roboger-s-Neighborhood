@@ -17,18 +17,19 @@ function myNeighbor() {
       result.push(i);
     }
   }
-}
 
-
-// UI Logic
 function outputResults () {
   let resultString = "";
   for (let i = 0; i <= result.length; i++) {
-      resultString += result[i];
+      resultString += result[i]; + "<br>";
     } 
       document.getElementById("output").innerHTML = resultString;
   }
-
+}
+// UI Logic
 window.addEventListener("load", function() {
-  form.addEventListener("submit", myNeighbor, outputResults);
+  const form = document.getElementById("countInput");
+  form.addEventListener("submit", myNeighbor);
+  load.preventDefault();
+  return outputResults();
 })
