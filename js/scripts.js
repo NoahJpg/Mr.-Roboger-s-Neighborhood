@@ -25,7 +25,8 @@ function myNeighbor(event) {
 function outputResults(result) {
   let resultString = "";
   for (let i = 0; i < result.length; i++) {
-      resultString += result[i]; + "<br>";
+      resultString += result[i];
+      resultString += "<br>";
     } 
       document.getElementById("output").innerHTML = resultString;
   }
