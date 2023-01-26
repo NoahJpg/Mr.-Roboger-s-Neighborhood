@@ -1,10 +1,10 @@
-# _Language Suggester_
+# _My Neighbor_
 
 #### By _**Noah Akinson**_
 
-#### _A questionaire that will assess which programming languge is best suited for you_
+#### _A program that will output "Beep!", "Boop!", and "Won't you be my neighbor?" at various intervals up to the number user inputs_
 
-https://github.com/NoahJpg/language-suggester.git
+https://github.com/NoahJpg/Portfolio.git
 
 ## Technologies Used
 
@@ -14,7 +14,7 @@ https://github.com/NoahJpg/language-suggester.git
 
 ## Description
 
-_This language suggester includes a few seemingly cryptic questions that the user will answer. Then it will output one of three common programming languages that is best suited to the user based on their response to the questions_
+_A web application that takes a number from the user and returns a list of values from 0 to the user's inputted number with some substitutions made within the returned list:_
 
 ## Setup/Installation Requirements
 
